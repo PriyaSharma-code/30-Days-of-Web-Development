@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transitions.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>To Do List</title>
+</head>
+<body style="background: rgb(9, 9, 39);">
+    
+    <div class="transition1is-active"></div>
+    <header>
+         <div class="header ">
+             <center>
+                    <h3>To Do List</h3> </h3>
+         <div class="header-right">
+           <a class="active" >DO NOT FORGET</a>
+           <a class="active"> To Live</a>
+           <a href="https://medium.com/@priyasharma.3321/course-project-resnet-c7d2d5bd2016">Blog</a>
+
+         </div>
+            </nav>
+
+            <br>
+            <br>
+            <hr>
+ 
+                        <ul class="panel-body msg_container_base" id="item">
+              
+                        <li><div class="row msg_container"><div class="col-xs-12 col-md-12"><div class="messages base_sent"><p>Monday : Toothpaste</p></div></div></div></li>
+                        <li><div class="row msg_container"><div class="col-xs-12 col-md-12"><div class="messages base_sent"><p>Tuesday : HairBrush</p></div></div></div></li>
+                        <li><div class="row msg_container"><div class="col-xs-12 col-md-12"><div class="messages base_sent"><p>Thursday: Nutella + Veggies</p></div></div></div></li><
+                        <ul id="joined"></ul>
+                        <ul id="typing"></ul>
+              
+                        <div class="panel-footer">
+                          <div class="input-group">
+                            <input id="m" type="text" class="form-control input-sm chat_input" placeholder="Write your item here...">
+                            <span class="input-group-btn">
+                              <button type="submit" class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+              
+              <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+              <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+              <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+              <script src="js/firebase.js"></script>
+              
+              <script>
+              
+                $(document).ready(function () {
+              
+                  $('#m').keyup(function (e) {
+                    if (e.keyCode == 13) {
+                      sendMessage();
+                    }
+                  });
+              
+                  $('#btn-chat').click(function () {
+                    sendMessage();
+                  });
+              
+                  $('#disconnect').click(function () {
+                    $.removeCookie("username");
+                    window.location = '/todolist.html';
+                  });
+              
+                });
+              
+              </script>
+              
+              </div>
+
+              <footer id="foot" >
+                <center>
+                    <p>Life is short. Make the most of it</p>
+                </center>
+            </footer>
+</body>
+</html>
