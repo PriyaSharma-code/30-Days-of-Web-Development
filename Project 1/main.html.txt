@@ -1,0 +1,125 @@
+!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Priya Sharma</title>
+    <style>
+* {box-sizing: border-box;}
+
+<body bg-color="black" text="black" style="background-color:rosybrown;"">
+    <header>
+        <center>
+            <nav id=" nav">
+         <div class="header">
+                    <a href="home.html" class="logo">Portfolio </a>
+         <div class="header-right">
+           <a class="active" href="home.html">Home</a>
+           <a href="one.html">Qualifications</a>
+           <a href="3.html">Form</a>
+         </div>
+            </nav>
+            <h1 class="head"><em> <strong>Priya Sharma</strong></em></h1>
+            
+        </center>
+    </header>
+    <hr>
+    <section id="about" style="background-color: white;">
+        <CENTER>
+            <br>
+            <h2>About Me</h2>
+            <dl>
+                <li>Student at MITWPU</li>
+                <li>Web Developer</li>
+                <li>C++/Python</li>
+                <li>Bootstrap</li>
+                <li>Javascript</li>
+                <li>CSS</li>
+                <li>Data Science</li>
+            </dl>
+            <hr>
+            <div class="imgs">
+                <img src="base.jfif" height="350px" width="350px">
+                
+            </div>
+        
+            </center>
+            <br>
+            <br>
+        
+    </section>
+    <hr>
+    <center>
+        <h2><u>Education:</u></h2>
+        <p><b>I haved my 12 years of schooling in 16 schools due to frequent shifting about.</b></p>
+        <table style="width:100%">
+        <tr>
+            <td>Second Year Student at MTWPU</td>
+        </tr>
+        <tr>
+            <td>Grade 12:</td>
+            <td></B> Indira National School</b></td>
+        </tr>
+        <tr>
+           <td>Grade 10:</td>
+           <td><b>SNBP International School</b></td>
+        </tr>
+        </table>
+    </center>
+    <hr>
+    <section id="videos" style="background-color: white;">
+        <center>
+            <br>
+            <h1 id="video">Here is a clip of my sketch</h1>
+            <br>
+            <video width="320" height="180" controls>
+                <source src="drawing.mp4" type="video/mp4">
+                <p>Sketching is one of the hobbies that i excel at. With numerous awards in art, I have an instagram account soley to share my works.</p>
+            </video>
+            <br>
+            <br>
+        </center>
+    </section>
+    <hr>
+    <section id="contact">
+        <center>
+            <h2>Contact:</h2>
+            <form action="mailto:priyasharma.3321@gmail.com" method="POST" enctype="text/plain">
+                <label for="fName">First Name:</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter Your First Name">
+                <br>
+                <br>
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name">
+                <br>
+                <br>
+                <label for="number">Contact Number:</label>
+                <input type="text" name="number" id="number" placeholder="Enter Your Contact Number">
+                <br>
+                <br>
+                <label for="Email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Enter Your Email" required>
+                <br>
+                <br>
+                <button type="submit" class="btn">Submit The Form</button>
+            </form>
+        </center>
+    </section>
+    <hr>
+    <footer id="foot" style="background-color: burlywood;">
+        <center>
+            <br>
+            <h3>
+            <b>Contact Me At :<b>
+            
+            <p>Mail At: priyasharma.3321@gmail.com</p>
+            <p>Phone: 8*********1</p>
+            </h3>
+            
+            <br>
+        </center>
+    </footer>
+</body>
+
+</html>
